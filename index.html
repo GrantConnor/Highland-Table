@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Highland Table</title>
+  <meta name="description"
+    content="Highland Table is a warm California restaurant experience with seasonal dishes, house specialties, and a cinematic dining atmosphere." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="top" class="top-anchor" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Highland Table</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Intro video section">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto"
+        poster="assets/images/margherita-pizza.png">
+        <source src="assets/video/hero-background.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container reveal">
+        <p class="eyebrow">California Dining • Seasonal Craft • Warm Evenings</p>
+        <h1>Highland Table</h1>
+        <p class="hero-copy">
+          A modern neighborhood restaurant shaped by open-fire cooking, relaxed elegance,
+          and a menu built for long conversations.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">Explore the Menu</a>
+          <a class="button button-secondary" href="#contact">Plan Your Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container split-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Us</p>
+          <h2>Built for gathering, grounded in flavor.</h2>
+        </div>
+        <div class="about-copy reveal stagger-delay-1">
+          <p>
+            Highland Table is a California restaurant inspired by the comfort of a well-set
+            table and the energy of a lively open kitchen. Our dining room blends polished
+            hospitality with an easygoing pace, making it just as fitting for date nights and
+            celebrations as it is for casual dinners with friends.
+          </p>
+          <p>
+            Our approach centers on honest ingredients, strong technique, and dishes that feel
+            generous without being fussy. From crisp starters and house-made pastas to grilled
+            entrées, wood-fired pizzas, and indulgent desserts, every plate is designed to feel
+            familiar, refined, and deeply satisfying.
+          </p>
+          <p>
+            We believe restaurants should feel memorable for the right reasons: warm service,
+            thoughtful details, and food that brings people back. At Highland Table, every visit
+            is meant to feel welcoming from the first pour to the last bite.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Menu Highlights</p>
+          <h2>An interactive look at the table.</h2>
+          <p>
+            Browse featured dishes below and filter the menu by course to explore Highland
+            Table’s signature lineup.
+          </p>
+        </div>
+
+        <div class="menu-toolbar reveal stagger-delay-1" role="toolbar" aria-label="Menu filters">
+          <button class="filter-chip is-active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="starters">Starters</button>
+          <button class="filter-chip" data-filter="mains">Mains</button>
+          <button class="filter-chip" data-filter="pasta">Pasta</button>
+          <button class="filter-chip" data-filter="grill">Grill</button>
+          <button class="filter-chip" data-filter="pizza">Pizza</button>
+          <button class="filter-chip" data-filter="sandwiches">Sandwiches</button>
+          <button class="filter-chip" data-filter="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal" data-category="sandwiches mains">
+            <div class="menu-image-wrap">
+              <img src="assets/images/crispy-chicken-sandwich.png" alt="Crispy chicken sandwich" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Sandwich</span>
+                <span class="price-placeholder">$25</span>
+              </div>
+              <h3>Crispy Chicken Sandwich</h3>
+              <p class="menu-description">
+                Golden fried chicken layered on a soft bun with fresh greens and a house-style
+                finish.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-1" data-category="pasta mains">
+            <div class="menu-image-wrap">
+              <img src="assets/images/chicken-alfredo.png" alt="Chicken alfredo pasta" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Pasta</span>
+                <span class="price-placeholder">$28</span>
+              </div>
+              <h3>Chicken Alfredo</h3>
+              <p class="menu-description">
+                Ribbon pasta tossed in a velvety cream sauce and topped with sliced roasted
+                chicken.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-2" data-category="starters">
+            <div class="menu-image-wrap">
+              <img src="assets/images/citrus-salmon.png" alt="Citrus salmon appetizer with capers and red onion" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Starter</span>
+                <span class="price-placeholder">$24</span>
+              </div>
+              <h3>Citrus Salmon</h3>
+              <p class="menu-description">
+                Thinly sliced salmon dressed with bright citrus accents, capers, and onion.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="grill mains">
+            <div class="menu-image-wrap">
+              <img src="assets/images/grilled-ribeye.png" alt="Grilled ribeye steak" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Grill</span>
+                <span class="price-placeholder">$38</span>
+              </div>
+              <h3>Grilled Ribeye</h3>
+              <p class="menu-description">
+                A deeply seared steak presentation paired with bold house accompaniments.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-1" data-category="pizza mains">
+            <div class="menu-image-wrap">
+              <img src="assets/images/margherita-pizza.png" alt="Margherita pizza" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Pizza</span>
+                <span class="price-placeholder">$22</span>
+              </div>
+              <h3>Margherita Pizza</h3>
+              <p class="menu-description">
+                Wood-fired style pizza with a crisp edge, melted cheese, and fresh basil notes.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-2" data-category="mains sandwiches">
+            <div class="menu-image-wrap">
+              <img src="assets/images/classic-sliders.png" alt="Classic sliders" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">House Favorite</span>
+                <span class="price-placeholder">$18</span>
+              </div>
+              <h3>Classic Sliders</h3>
+              <p class="menu-description">
+                Three stacked mini burgers built for sharing, finished with crisp toppings.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="starters">
+            <div class="menu-image-wrap">
+              <img src="assets/images/heirloom-bruschetta.png" alt="Heirloom tomato bruschetta" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Starter</span>
+                <span class="price-placeholder">$14</span>
+              </div>
+              <h3>Heirloom Bruschetta</h3>
+              <p class="menu-description">
+                Rustic toast layered with a fresh tomato topping and herb-forward spread.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-1" data-category="starters">
+            <div class="menu-image-wrap">
+              <img src="assets/images/pull-apart-garlic-bread.png" alt="Pull-apart garlic bread" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Shareable</span>
+                <span class="price-placeholder">$12</span>
+              </div>
+              <h3>Pull-Apart Garlic Bread</h3>
+              <p class="menu-description">
+                Oven-baked bread with melted cheese and a rich garlic-herb finish.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-2" data-category="mains">
+            <div class="menu-image-wrap">
+              <img src="assets/images/crispy-fried-chicken.png" alt="Crispy fried chicken" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Main</span>
+                <span class="price-placeholder">$24</span>
+              </div>
+              <h3>Crispy Fried Chicken</h3>
+              <p class="menu-description">
+                Crunchy, golden chicken pieces served as a comfort-forward signature plate.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-category="desserts">
+            <div class="menu-image-wrap">
+              <img src="assets/images/fudgy-brownie-stack.png" alt="Fudgy brownie stack" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Dessert</span>
+                <span class="price-placeholder">$18</span>
+              </div>
+              <h3>Fudgy Brownie Stack</h3>
+              <p class="menu-description">
+                Rich chocolate brownies finished with a dusting of sugar and scattered dark
+                chocolate shards.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-1" data-category="desserts">
+            <div class="menu-image-wrap">
+              <img src="assets/images/cookies-and-cream-cheesecake.png"
+                alt="Cookies and cream cheesecake with chocolate drizzle" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Dessert</span>
+                <span class="price-placeholder">$16</span>
+              </div>
+              <h3>Cookies &amp; Cream Cheesecake</h3>
+              <p class="menu-description">
+                Creamy cheesecake on a chocolate cookie crust topped with crushed sandwich
+                cookies and warm fudge.
+              </p>
+            </div>
+          </article>
+
+          <article class="menu-card reveal stagger-delay-2" data-category="desserts">
+            <div class="menu-image-wrap">
+              <img src="assets/images/molten-chocolate-cake.png" alt="Molten chocolate cake" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-topline">
+                <span class="menu-tag">Dessert</span>
+                <span class="price-placeholder">$14</span>
+              </div>
+              <h3>Molten Chocolate Cake</h3>
+              <p class="menu-description">
+                A warm individual chocolate cake with a flowing center and a delicate cocoa dust.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Visit Us</p>
+          <h2>Settle in for the evening.</h2>
+          <p>
+            Join us for dinner, small celebrations, and unhurried nights around the table.
+            Highland Table is designed to feel polished, welcoming, and comfortably local.
+          </p>
+        </div>
+
+        <div class="contact-card reveal stagger-delay-1">
+          <h3>Contact Information</h3>
+          <ul class="contact-list">
+            <li>
+              <span>Address</span>
+              <strong>4821 Redwood Avenue, Carmel-by-the-Sea, CA 93921</strong>
+            </li>
+            <li>
+              <span>Phone</span>
+              <strong>(831) 555-0148</strong>
+            </li>
+            <li>
+              <span>Email</span>
+              <strong>contact@highlandtable.com</strong>
+            </li>
+            <li>
+              <span>Hours</span>
+              <strong>Mon–Thu 11:00 AM – 10:30 PM • Fri–Sun 11:00 AM – 2:00 AM</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Highland Table. Crafted for welcoming nights and memorable meals.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
